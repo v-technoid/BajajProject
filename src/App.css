@@ -1,0 +1,98 @@
+/* General Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f9fc;
+}
+
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Textarea */
+textarea {
+  width: 80%;
+  padding: 12px;
+  margin: 15px 0;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+}
+
+/* Buttons */
+button {
+  padding: 12px 24px;
+  margin: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Filter Section */
+.filter {
+  text-align: left;
+  margin: 20px;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+}
+
+/* Error and Response Sections */
+.error {
+  color: #d9534f;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.filtered-response {
+  text-align: left;
+  margin-top: 20px;
+  background-color: #e9ecef;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+pre {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  overflow-x: auto;
+}
+
+@media (max-width: 768px) {
+  textarea {
+    width: 95%;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  .filter select {
+    width: 100%;
+  }
+}
+button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(38, 143, 255, 0.5);
+}
+
+textarea:focus {
+  border-color: #007bff;
+}
